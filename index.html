@@ -23,7 +23,7 @@
         background: #eaeff3;
         color: #000;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: bold;
         margin: 0;
       }
@@ -35,7 +35,7 @@
       }
 	    
       .container {
-	margin-top: -50px; 
+	      margin-top: -100px; 
       }
 
       input[type="checkbox"] {
@@ -43,7 +43,7 @@
         top: 40px;
         width: 72px;
         height: 26px;
-	opacity: 0;
+	      opacity: 0;
       }
 
       input[type="checkbox"]:checked + label.red:before {
@@ -66,7 +66,7 @@
       input[type="checkbox"] + label {
         display: block;
         position: relative;
-        margin-bottom: 1.2em;
+        margin-bottom: 0.2em;
       }
 
       input[type="checkbox"] + label:before {
@@ -135,6 +135,10 @@
       }
 
       @media (min-width: 700px) {
+        body {
+          font-size: 30px;
+        }
+
         .info, .share {
           position: absolute;
           bottom: 0;
@@ -153,6 +157,10 @@
         .share svg {
           width: 44px;
           height: 44px;
+        }
+
+        input[type="checkbox"] + label {
+          margin-bottom: 1.2em;
         }
       }
 
